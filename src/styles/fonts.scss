@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "IRANSansWebNum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../public/fonts/IRANSansWeb\(FaNum\).ttf") format("ttf"),
+    url("../../public/fonts/IRANSansWeb\(FaNum\).woff2") format("woff2"),
+    url("../../public/fonts/IRANSansWeb\(FaNum\).woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANSansWeb";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../public/fonts/IRANSansWeb.ttf");
+  font-display: swap;
+}

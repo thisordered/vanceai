@@ -1,0 +1,113 @@
+.button {
+  @apply w-44 h-16 whitespace-nowrap text-center bg-primary hover:bg-primary/80 text-foreground px-14 py-4 text-xl rounded-sm flex items-center justify-center;
+  &-secondary {
+    @apply bg-white hover:bg-background text-foreground px-14 py-4 text-xl border-2 hover:border-foreground;
+  }
+  &-small {
+    @apply px-4 py-2 text-base h-10;
+  }
+}
+
+.main-header {
+  @apply z-50 bg-white sticky top-0 flex items-center justify-between px-10 py-4;
+  nav {
+    @apply flex items-center justify-between space-x-10 rtl:space-x-reverse;
+  }
+}
+
+.logo {
+  @apply bg-red-400;
+}
+
+.hero {
+  @apply w-full h-[600px] overflow-hidden bg-gradient-to-r from-stone-700 to-stone-400 px-40 flex items-center justify-around text-background;
+
+  &-image {
+    @apply w-2/4;
+  }
+  &-description {
+    @apply w-2/4;
+    h1 {
+      @apply text-4xl leading-relaxed;
+    }
+    p {
+      @apply text-lg leading-8 my-8;
+    }
+
+    footer {
+      @apply flex items-center justify-start space-x-4 rtl:space-x-reverse;
+    }
+  }
+}
+
+.recommendation {
+  @apply container max-w-[1200px] mx-auto text-center;
+  h1 {
+    @apply text-3xl my-4;
+  }
+
+  &-products {
+    @apply grid grid-cols-1 lg:grid-cols-4 my-10 mx-auto items-center justify-center place-content-center place-items-center gap-4;
+
+    &-single {
+      @apply w-full text-right shadow-lg overflow-hidden flex flex-col border rounded items-stretch justify-around space-y-4 bg-background;
+      h2 {
+        @apply text-center;
+      }
+
+      img {
+        @apply w-full;
+      }
+      &-content {
+        @apply flex flex-col items-center justify-around space-y-4 p-4;
+      }
+    }
+  }
+}
+.hot-ai-features {
+  @apply relative overflow-hidden z-0 flex items-center flex-col;
+  h1 {
+    @apply z-10 text-3xl my-10 text-background;
+  }
+  &-container {
+    @apply relative w-10/12 h-[800px] mx-auto z-10 flex items-center px-20;
+    div:nth-child(1) {
+      @apply relative z-10 flex flex-col items-start justify-normal w-4/12 text-background;
+      h2 {
+        @apply text-4xl leading-loose;
+      }
+      p {
+        @apply text-base my-10;
+      }
+    }
+    div:nth-child(2) {
+      @apply absolute top-0 right-0 bottom-0 left-0 z-0 h-max shadow-xl;
+    }
+  }
+}
+
+.menu-item {
+  nav {
+    display: none;
+  }
+}
+.menu-item {
+  &:hover {
+    nav {
+      display: grid;
+    }
+  }
+}
+
+.user-menu {
+  .login-container {
+    display: none;
+  }
+}
+.user-menu {
+  .menu-item:first-child:hover {
+    .login-container {
+      display: grid;
+    }
+  }
+}
